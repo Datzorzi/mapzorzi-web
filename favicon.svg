@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Marca do MapZorzi: o talhão visto de cima e a grade de coleta dentro
+       dele. É o que o app faz, e sobrevive a 32 px — que é o tamanho em que
+       um ícone realmente é visto (aba do navegador, barra de tarefas).
+
+       Esta é a ORIGEM de todos os ícones: instalador, barra de tarefas, tela
+       de início do celular, aba do navegador. Mexeu aqui, rode
+       `npm run icones` pra regerar o resto. -->
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3C7A3D"/>
+      <stop offset="1" stop-color="#22491F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="1024" rx="224" fill="url(#fundo)"/>
+
+  <!-- O contorno do talhão: irregular de propósito, porque talhão quadrado
+       não existe. -->
+  <path d="M232 318 L508 214 L812 330 L786 700 L470 828 L214 654 Z"
+        fill="#FBF8F1" fill-opacity="0.14"
+        stroke="#FBF8F1" stroke-opacity="0.85" stroke-width="30"
+        stroke-linejoin="round"/>
+
+  <!-- A grade de pontos, em ziguezague como a caminhada da coleta é de
+       verdade. -->
+  <g fill="#D98C1F">
+    <circle cx="348" cy="398" r="46"/>
+    <circle cx="560" cy="342" r="46"/>
+    <circle cx="700" cy="470" r="46"/>
+    <circle cx="666" cy="662" r="46"/>
+    <circle cx="452" cy="700" r="46"/>
+    <circle cx="336" cy="562" r="46"/>
+  </g>
+</svg>
